@@ -18,7 +18,7 @@ export default function Searchbox() {
 
   return (
     <form
-      className="flex grow max-w-3xl"
+      className="flex grow max-w-3xl rounded-md overflow-hidden"
       onSubmit={handleSubmit(searchProducts)}
       autoComplete="off"
       aria-label="search-form"
@@ -34,7 +34,7 @@ export default function Searchbox() {
       </div>
       <button
         type="submit"
-        className="bg-orange-500 grid place-content-center p-2"
+        className="bg-orange-500 grid place-content-center p-2 outline-none hover:bg-orange-600 focus:bg-orange-600 transition ease-in-out"
         aria-label="btn-submit-query"
         disabled={isSubmitting} // also disables form submission by pressing the ENTER key
       >
