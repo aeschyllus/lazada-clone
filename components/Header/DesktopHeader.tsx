@@ -38,7 +38,7 @@ export default function DesktopHeader() {
               <Profile />
             </>
           )}
-          {/* TODO: create signin and signup page */}
+          {/* TODO: create signup page */}
           {!auth && (
             <div className="flex items-center gap-3">
               <NavItem

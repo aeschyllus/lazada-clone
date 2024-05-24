@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { DesktopHeader, MobileHeader } from "@/components/Header";
 
 export default function RootLayout({
@@ -8,7 +9,7 @@ export default function RootLayout({
       <DesktopHeader />
       <MobileHeader />
       {children}
-      <footer>footer</footer>
+      <Footer />
       {/* TODO: add sticky mobile nav at the bottom */}
     </>
   );
