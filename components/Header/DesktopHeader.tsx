@@ -8,12 +8,12 @@ import { Searchbox } from "../Searchbox";
 import NavItem from "./NavItem";
 import Profile from "./Profile";
 
-const auth = true; // use server side action(?)
+const auth = false; // use server side action(?)
 
 export default function DesktopHeader() {
   return (
     <header
-      className="hidden md:block sticky top-0 bg-white py-4"
+      className="hidden md:block sticky top-0 bg-white p-4"
       aria-label="desktop-header"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center gap-8">
@@ -42,13 +42,13 @@ export default function DesktopHeader() {
           {!auth && (
             <div className="flex items-center gap-3">
               <NavItem
-                route={ROUTES.HOME}
+                route={ROUTES.AUTH.SIGN_IN}
                 ariaLabel="signin-link"
                 title="Sign in"
                 type="link"
               />
               <NavItem
-                route={ROUTES.HOME}
+                route={ROUTES.AUTH.SIGN_UP}
                 ariaLabel="signup-link"
                 title="Sign up"
                 type="button"

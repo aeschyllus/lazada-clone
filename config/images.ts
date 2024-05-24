@@ -4,4 +4,5 @@
 
 export const IMAGES = {
   LOGO: "/assets/img/png/logo.png",
+  LOGO_2: "/assets/img/png/logo_2.png",
 };
