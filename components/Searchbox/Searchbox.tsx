@@ -34,7 +34,7 @@ export default function Searchbox() {
       </div>
       <button
         type="submit"
-        className="bg-orange-500 grid place-content-center p-2 outline-none hover:bg-orange-600 focus:bg-orange-600 transition ease-in-out"
+        className="bg-orange-500 grid place-content-center p-2 outline-none hover:bg-orange-600 focus-visible:bg-orange-600 transition ease-in-out"
         aria-label="btn-submit-query"
         disabled={isSubmitting} // also disables form submission by pressing the ENTER key
       >

@@ -17,8 +17,8 @@ export default function NavItem({
   type,
 }: NavItemProps) {
   const classes = classNames("transition ease-in-out outline-none", {
-    "hover:text-orange-500 focus:text-orange-500": type === "link",
-    "bg-orange-500 text-white rounded-md px-3 py-2 hover:bg-orange-600 focus:bg-orange-600":
+    "hover:text-orange-500 focus-visible:text-orange-500": type === "link",
+    "bg-orange-500 text-white rounded-md px-3 py-2 hover:bg-orange-600 focus-visible:bg-orange-600":
       type === "button",
     className,
   });
