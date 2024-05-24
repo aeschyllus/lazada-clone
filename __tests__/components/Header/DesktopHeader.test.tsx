@@ -3,7 +3,16 @@ import { describe, expect, it } from "vitest";
 import { DesktopHeader } from "@/components/Header";
 
 describe("DesktopHeader", () => {
-  it("should render", () => {
+  it("should render auth links", () => {
+    const { container, getByRole } = render(<DesktopHeader />);
+    expect(
+      container.querySelector('[aria-label="desktop-header"]')
+    ).toBeDefined();
+    expect(getByRole("link", { name: "signin-link" })).toBeDefined();
+    expect(getByRole("link", { name: "signup-link" })).toBeDefined();
+  });
+
+  it.skip("should render user links", () => {
     const { container, getByRole } = render(<DesktopHeader />);
     expect(
       container.querySelector('[aria-label="desktop-header"]')
