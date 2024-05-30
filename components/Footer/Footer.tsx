@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-zinc-900 text-gray-300" aria-label="footer">
-      <section className="max-w-7xl mx-auto p-6">
+      <section className="max-w-7xl mx-auto p-6 md:px-0">
         <h5 className="mb-2 font-bold">
           The Top Online Shopping Experience with Lazada Philippines
         </h5>
@@ -54,7 +54,7 @@ export default function Footer() {
           of your money's worth online!
         </p>
       </section>
-      <section className="max-w-7xl mx-auto p-6 flex justify-between flex-col md:flex-row gap-8 md:gap-0">
+      <section className="max-w-7xl mx-auto p-6 md:px-0 flex justify-between flex-col md:flex-row gap-8 md:gap-0">
         <div>
           <h5 className="mb-2 md:mb-4 font-bold">Payment Methods</h5>
           <div className="flex items-center gap-4">
